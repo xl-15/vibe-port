@@ -42,7 +42,6 @@ footer{
   padding: 30px;
   text-align: center;
   color: aliceblue;
-  font-size: ;
 }
 .headerLogo, header{
   width: 100%;
@@ -84,10 +83,13 @@ footer{
   align-items: center;
   width: 100%;
 }
+/* ------ general style ------ */
+/* ------ general style ------ */
 .sectionTitles{
   background-color: rgb(22, 72, 255);
   width: 50%;
   padding: 10px;
+  margin-bottom: 50px;
   text-align: center;
   color: aliceblue;
   font-size: 25px;
@@ -97,6 +99,7 @@ footer{
   /* ------ background-color: rgb(22, 72, 255); ------ */
   width: 50%;
   padding: 10px;
+  margin-bottom: 50px;
   text-align: center;
   color: aliceblue;
   font-size: 25px;
@@ -104,7 +107,8 @@ footer{
 }
 .toolsPng{
   display: flex;
-  justify-content: center;  
+  justify-content: center;
+  margin-bottom: 50px;  
 }
   
 .toolsPng, img{
@@ -116,13 +120,14 @@ footer{
 .toolsText{
   background-color: rgb(22, 72, 255);
   width: 50%;
-  padding: 10px;
+  padding: 30px;
+  margin-bottom: 100px;
   text-align: center;
   color: aliceblue;
-  font-size: 15px;
+  font-size: 25px;
   border-radius: 30px;
 }
-
+/* ------ general style ------ */
 /* ------ general style ------ */
 .screenWork{
   background-color: rgb(0, 0, 0);
@@ -139,19 +144,95 @@ footer{
   margin: 10px;
   background-color: rgb(255, 255, 255);
 }
+
+/* ------  contact Form ------ */
+.contactFormContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(22, 72, 255, 0.8), rgba(255, 255, 255, 0.8));
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.contactForm {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: aliceblue;
+  background-color: rgb(22, 72, 255);
+  background: linear-gradient(135deg, rgb(22, 72, 255), rgb(0, 122, 255));
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactForm:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contactForm input, .contactForm textarea, .contactForm button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contactForm button {
+  background-color: rgb(0, 122, 255);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: rgb(0, 100, 220);
+  transform: translateY(-2px);
+}
+
+fieldset {
+  border-radius: 25px;
+  border: solid rgb(255, 255, 255);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 /* ------ general style ------ */
 
 
 
 
 /* ------ radio button ------ */
-fieldset{
+.navBar.fieldset{
   border-radius: 25px;
   border: solid rgb(255, 255, 255);
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
-form {
+.navBar,form {
     border-radius: 20px;
 }
 .radio-block {
@@ -270,16 +351,7 @@ input[type=radio]:checked + .off-label + .selected {
   /* ------ space ------ */
 
   /* ------ space ------ */
-.contactForm{
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: rgb(22, 72, 255);
-  color: aliceblue;
-}
+
 
   /* ------ space ------ */
 
