@@ -206,7 +206,7 @@ footer{
   transform: translateY(-2px);
 }
 
-fieldset {
+.contactFormContain fieldset {
   border-radius: 25px;
   border: solid rgb(255, 255, 255);
   padding: 20px;
@@ -214,7 +214,7 @@ fieldset {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-form {
+.contactFormContain form {
   border-radius: 20px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -225,16 +225,14 @@ form {
 
 
 
+/* ------ added specification to the nav elements to counter contactForm elements ------ */
 /* ------ radio button ------ */
-.navBar.fieldset{
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+.navBar fieldset{
   border-radius: 25px;
   border: solid rgb(255, 255, 255);
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
-.navBar,form {
-    border-radius: 20px;
-}
 .radio-block {
   position: relative;
   display: flex;
